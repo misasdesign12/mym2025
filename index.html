@@ -11,17 +11,22 @@
         
         <!-- Blur Medium (vía @fontsource) -->
         <link href="fonts/Blur Medium.otf" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500;700&display=swap" rel="stylesheet">
       
         <!-- Geist (Google Fonts alternativa) -->
         <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet" />
       </head>
 
 
-<body>
-  <header>
-    <img src="img/log.png" alt="" width="120px">
-    <h1></h1>
-  </header>
+      <body>
+        <header>
+          <div class="encabezado-flex">
+            <img src="img/log.png" alt="" width="100px" class="logo-img">
+            <a href="https://linktr.ee/masymas.org" target="_blank" class="boton-registro conoce-mas"><span>conoce más</span></a>
+          </div>
+        </header>
+  
 
   <section class="video-banner">
     <img src="img/copy_C14E3077-2498-4069-AC3D-0CBBCFC35FA1.GIF" alt="Summer Camp 2025" class="banner-gif">
@@ -31,10 +36,24 @@
     </div>
   </section>
 
+  <div class="marquee">
+    <p>MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS Y MÁS  </p>
+  </div>
+
   <section class="registro">
     <h1>summer<br>camp´25</h1>
     <p>prepárate para pasarla increíble este verano :)</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSekrNg4dmJVCSEUBq8bglpYFbAn4_olKnrG3s7Z5qGZkum6sw/viewform?usp=header" target="_blank" class="boton-registro"><span>Regístrate aquí</span></a>
+  </section>
+
+  <section class="cuenta-regresiva">
+    <h2>Faltan</h2>
+    <div class="contador">
+      <div><span id="dias">00</span><small>días</small></div>
+      <div><span id="horas">00</span><small>horas</small></div>
+      <div><span id="minutos">00</span><small>min</small></div>
+      <div><span id="segundos">00</span><small>seg</small></div>
+    </div>
   </section>
 
   <section class="mapa">
@@ -64,9 +83,37 @@
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 MÁS Y MÁS. Todos los derechos reservados.</p>
+      <p>&copy; 2025 MÁS Y MÁS | Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    // Establece la fecha objetivo del evento
+    const fechaEvento = new Date("2025-07-18T00:00:00"); // Cambia la fecha según necesites
+  
+    function actualizarCuentaRegresiva() {
+      const ahora = new Date();
+      const diferencia = fechaEvento - ahora;
+  
+      if (diferencia <= 0) {
+        document.querySelector(".cuenta-regresiva").innerHTML = "<h2>¡Ya comenzó!</h2>";
+        return;
+      }
+  
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferencia / 1000) % 60);
+  
+      document.getElementById("dias").textContent = String(dias).padStart(2, '0');
+      document.getElementById("horas").textContent = String(horas).padStart(2, '0');
+      document.getElementById("minutos").textContent = String(minutos).padStart(2, '0');
+      document.getElementById("segundos").textContent = String(segundos).padStart(2, '0');
+    }
+  
+    setInterval(actualizarCuentaRegresiva, 1000);
+    actualizarCuentaRegresiva(); // Llamada inicial
+  </script>
 </body>
 </html>
     
