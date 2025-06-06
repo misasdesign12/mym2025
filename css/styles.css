@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #EEEADD;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #000000;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .logo {
+    color: #EEEADD;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .video-banner {
+    background-color: #031FFF;
+    padding: 3rem 1rem;
+    color: #EEEADD;
+    text-align: center;
+  }
+  
+  .video-placeholder {
+    border: 2px dashed #EEEADD;
+    padding: 4rem;
+    font-size: 1.2rem;
+  }
+  
+  .registro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #EEEADD;
+  }
+  
+  .registro h1 {
+    font-size: 3rem;
+    color: #031FFF;
+  }
+  
+  .registro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .boton-registro {
+    background-color: #031FFF;
+    color: #EEEADD;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-registro:hover {
+    background-color: #000000;
+  }
+  
+  .redes {
+    background-color: #000000;
+    color: #EEEADD;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .redes h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .iconos a {
+    margin: 0 1rem;
+    color: #031FFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .iconos a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #EEEADD;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #000000;
+  }
