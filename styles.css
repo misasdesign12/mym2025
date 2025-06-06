@@ -322,6 +322,54 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+
+  .boton-calendario-contenedor {
+    text-align: center;
+    margin-top: 0;
+    background-color: #000000;
+  }
+  
+  .boton-agendar {
+    background-color: #031FFF;
+    color: #EEEADD;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-family: 'Blur', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .boton-agendar::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, transparent 80%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: agua-reflejo 3s infinite linear;
+    z-index: 0;
+  }
+  
+  .boton-agendar:hover {
+    background-color: #EEEADD;
+    color: #031FFF;
+  }
+  
+  .boton-agendar:hover::before {
+    opacity: 1;
+  }
+
+  
   
   /* ======== RESPONSIVE DESIGN ======== */
 
