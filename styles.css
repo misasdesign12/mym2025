@@ -99,7 +99,7 @@
   
   .registro h1 {
     line-height:0.8;
-    font-size: 5rem;
+    font-size: 2rem;
     color: #EEEADD;
     margin-top: 0rem;
     margin-bottom: 6rem;
@@ -368,9 +368,256 @@
   .boton-agendar:hover::before {
     opacity: 1;
   }
+  
+  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #000000;
+  }
+  
+  .formulario {
+    background-color: #031FFF;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario h1 {
+    color: #EEEADD;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    margin-top: 2rem;
+    background-color: #031FFF;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
 
+  /* Playera Merch */
+  .playera {
+    background-color: #000000; /* azul del campamento */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .playera p {
+    color: #EEEADD;
+    line-height: 0.5rem;
+    text-align: center;
+  }
   
+  .playera h2 {
+    font-family: 'Blur', sans-serif;
+    color: #031FFF;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+  }
   
+  .playera-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .playera-img {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+  }
+
+/* Logo Aquí y Ahora */
+.logo-aqui-ahora {
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 1rem;
+
+}
+
+@media (max-width: 768px) {
+  .logo-aqui-ahora {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-aqui-ahora {
+    max-width: 200px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000000;
+  color: #000;
+}
+
+.playera-slider {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.playera-slider h1 {
+  margin-top: -1rem;
+  font-family: 'Blur', sans-serif;
+  color: #031FFF;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+ margin-bottom: 3rem;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav {
+  background-color: #000000cc;
+  color: #EEEADD;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+   transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.nav:hover {
+  background-color: #031FFF;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.volver {
+  display: block;
+  margin-top: 2rem;
+  color: #031FFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.descripcion-playera {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Geist', sans-serif;
+}
+
+.descripcion-playera h2 {
+  font-family: 'Blur', sans-serif;
+  font-size: 1.8rem;
+  color: #031FFF;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion-playera p {
+  margin: 0.3rem 0;
+  color: #EEEADD;
+  font-size: 1rem;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #EEEADD;
+}
+
+
   /* ======== RESPONSIVE DESIGN ======== */
 
 
@@ -438,7 +685,7 @@
     }
   
     .registro h1 {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
   
     .registro p {
@@ -475,7 +722,7 @@
     }
   
     .registro h1 {
-      font-size: 4rem;
+      font-size: 2rem;
     }
   
     .boton-registro {
@@ -496,7 +743,7 @@
     }
   
     .registro h1 {
-      font-size: 4.5rem;
+      font-size: 2.5rem;
     }
   
     .boton-registro {
