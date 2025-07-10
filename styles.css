@@ -291,7 +291,8 @@
   .cuenta-regresiva h2 {
     font-size: 3rem;
     color: #031FFF;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
   }
   
   .contador {
