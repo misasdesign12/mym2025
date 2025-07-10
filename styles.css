@@ -662,19 +662,40 @@ body {
 @media (max-width: 480px) {
   .playlist-container {
     margin: 2rem 1rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
   }
+
+  .open-spotify-btn {
+    width: auto;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
 
   .playlist-container h2 {
     font-size: 1.8rem;
   }
 
   .open-spotify-btn {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-  }
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #031FFF;
+  color: #EEEADD;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
   iframe {
     height: 300px;
