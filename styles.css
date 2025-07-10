@@ -617,27 +617,36 @@ body {
   color: #EEEADD;
 }
 
-.playlist-container {
-  max-width: 600px;
-  width: 90%;
-  margin: 40px auto;
-  padding: 24px;
-  border-radius: 16px;
-  background-color: #f4f4f4;
+.playlist-section {
+  background-color: #000;
+  padding: 4rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
 }
 
-/* Spotify Button */
+.playlist-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.playlist-container h2 {
+  font-family: 'Blur', sans-serif;
+  font-size: 2.5rem;
+  color: #031FFF;
+  margin-bottom: 1.5rem;
+}
+
 .open-spotify-btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 28px;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
   background-color: #031FFF;
   color: #EEEADD;
   font-weight: 600;
-  font-size: 1rem;
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -649,33 +658,28 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .playlist-container {
-    padding: 20px;
-    margin: 20px auto;
-  }
-
-  .open-spotify-btn {
-    padding: 10px 24px;
-    font-size: 0.95rem;
-  }
-}
-
+/* Responsive ajustes para móvil */
 @media (max-width: 480px) {
   .playlist-container {
-    padding: 16px;
+    margin: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .playlist-container h2 {
+    font-size: 1.8rem;
   }
 
   .open-spotify-btn {
     display: block;
     width: 100%;
+    padding: 1rem;
     font-size: 1rem;
-    padding: 12px;
-    box-sizing: border-box;
+  }
+
+  iframe {
+    height: 300px;
   }
 }
-
   /* ======== RESPONSIVE DESIGN ======== */
 
 
