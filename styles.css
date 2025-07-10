@@ -617,6 +617,33 @@ body {
   color: #EEEADD;
 }
 
+/* CSS */
+.playlist-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #f4f4f4;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.open-spotify-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #031FFF;
+  color: #EEEADD;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.open-spotify-btn:hover {
+  background-color: #EEEADD;
+  color: #031FFF;
+}
 
   /* ======== RESPONSIVE DESIGN ======== */
 
